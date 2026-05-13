@@ -39,9 +39,9 @@
     // JS FILES
     // =========================
 
-    const jsFiles =
-        [...document.querySelectorAll('script[src]')]
-        .map(e => e.src);
+    // const jsFiles =
+    //     [...document.querySelectorAll('script[src]')]
+    //     .map(e => e.src);
 
     // =========================
     // DATA
@@ -75,14 +75,14 @@
     // JS DOWNLOAD
     // =========================
 
-    for(const file of jsFiles){
+    // for(const file of jsFiles){
 
-        const name =
-            file.split("/").pop().split("?")[0];
+    //     const name =
+    //         file.split("/").pop().split("?")[0];
 
-        data.js[name] =
-            await getText(file);
-    }
+    //     data.js[name] =
+    //         await getText(file);
+    // }
 
     // =========================
     // JSON FILE
